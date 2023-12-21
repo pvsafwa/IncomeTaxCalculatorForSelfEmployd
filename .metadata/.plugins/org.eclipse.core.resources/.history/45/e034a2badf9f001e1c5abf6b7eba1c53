@@ -1,0 +1,107 @@
+package com;
+import java.util.Scanner;
+
+public class TaxCalC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inputKey = new Scanner(System.in);
+		System.out.println("Please Enter your name");
+		String name = inputKey.next();
+		System.out.println("Hello " +name+"!");
+		System.out.println("Please Enter your annual salary");
+		float annualSalary = 0;
+		Scanner inputSalary = new Scanner(System.in);
+		annualSalary = inputSalary.nextFloat();
+		float surCharge=0;
+				
+		if (annualSalary > 300000 && annualSalary < 600000)
+		{
+			System.out.println("Congratulatons! You comes under tax Slab-1");
+			float slab1Tax = (annualSalary - 300000) * 5/100;
+			System.out.println("Your annual tax is " +slab1Tax);
+			float slab1Cess = slab1Tax*4/100;
+			System.out.println("Your annual heath and education cess is " +slab1Cess);
+			float slab1Total = slab1Tax + slab1Cess;
+			System.out.println("The final tax liability for the year is " +slab1Total);
+			
+		}
+		else if (annualSalary > 300000 && annualSalary < 900000)
+		{
+			System.out.println("Congratulatons! You comes under tax Slab-2");
+			float slab2Tax = (15000+(annualSalary - 600000) * 10/100);
+			System.out.println("Your annual tax is " +slab2Tax);
+			float slab2Cess = slab2Tax*4/100;
+			System.out.println("Your annual heath and education cess is " +slab2Cess);
+			float slab2Total = slab2Tax + slab2Cess;
+			System.out.println("The final tax liability for the year is " +slab2Total);
+		}
+		
+		else if (annualSalary > 300000 && annualSalary < 1200000)
+		{
+			System.out.println("Congratulatons! You comes under tax Slab-3");
+			float slab3Tax = (15000+30000+(annualSalary - 900000) * 15/100);
+			System.out.println("Your annual tax is " +slab3Tax);
+			float slab3Cess = slab3Tax*4/100;
+			System.out.println("Your annual heath and education cess is " +slab3Cess);
+			float slab3Total = slab3Tax + slab3Cess;
+			System.out.println("The final tax liability for the year is " +slab3Total);
+		}
+		
+		else if (annualSalary > 300000 && annualSalary < 1500000)
+		{
+			System.out.println("Congratulatons! You comes under tax Slab-4");
+			float slab4Tax = (15000+30000+45000+(annualSalary - 1200000) * 20/100);
+			System.out.println("Your annual tax is " +slab4Tax);
+			float slab4Cess = slab4Tax*4/100;
+			System.out.println("Your annual heath and education cess is " +slab4Cess);
+			float slab4Total = slab4Tax + slab4Cess;
+			System.out.println("The final tax liability for the year is " +slab4Total);
+		}
+		
+		else if (annualSalary > 1500000 && annualSalary <= 5000000)
+		{
+		System.out.println("Congratulatons! You comes under tax Slab-5");
+		float slab5Tax = 15000 + 30000 + 45000 + 60000 +((annualSalary - 1500000) * 30/100);
+		System.out.println("Your annual tax is " +slab5Tax);
+		float slab5Cess = slab5Tax*4/100;
+		System.out.println("Your annual heath and education cess is " +slab5Cess);
+		float slab5Total = slab5Tax + slab5Cess;
+		System.out.println("The final tax liability for the year is " +slab5Total);
+		}
+		
+		else if (annualSalary > 5000000 && annualSalary < 10000000)
+		{
+		System.out.println("Congratulatons! You comes under tax Slab-5");
+		float slab5Tax = 15000 + 30000 + 45000 + 60000 +((annualSalary - 1500000) * 30/100);
+		System.out.println("Your annual tax is " +slab5Tax);
+		float slab5Cess = slab5Tax*4/100;
+		System.out.println("Your annual heath and education cess is " +slab5Cess);
+		System.out.println("Since your annual salary is more than 50 lakhs, you  have to pay a surchargeof 10% of the tax.");
+		float surCharge1 = 10/100*slab5Tax;
+		System.out.println(surCharge1);
+		float slab5Total = slab5Tax + slab5Cess+surCharge1;
+		System.out.println("The final tax liability for the year is " +slab5Total);
+		}
+		
+		else if (annualSalary > 10000000)
+		{
+		System.out.println("Congratulatons! You comes under tax Slab-5");
+		float slab5Tax = 15000 + 30000 + 45000 + 60000 +((annualSalary - 1500000) * 30/100);
+		System.out.println("Your annual tax is " +slab5Tax);
+		float slab5Cess = slab5Tax*4/100;
+		System.out.println("Your annual heath and education cess is " +slab5Cess);
+		System.out.println("Since your annual salary is more than 1 Crore, you  have to pay a surchargeof 15% of the tax.");
+		float surCharge1 = 15/100*slab5Tax;
+		System.out.println("Your surcharge payable is " +surCharge1);
+		float slab5Total = slab5Tax + slab5Cess+surCharge1;
+		System.out.println("The final tax liability for the year is " +slab5Total);
+		}
+		else
+			System.out.println("You dont have to pay any taxes");
+		
+		
+		
+	}
+
+}

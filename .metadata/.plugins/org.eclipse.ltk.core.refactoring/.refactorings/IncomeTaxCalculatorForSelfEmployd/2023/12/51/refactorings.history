@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.calculateSlab1Tax&apos; to &apos;CalculateSlab1Tax&apos;&#x0D;&#x0A;- Original project: &apos;IncomeTaxCalculatorForSelfEmployd&apos;&#x0D;&#x0A;- Original element: &apos;com.calculateSlab1Tax&apos;&#x0D;&#x0A;- Renamed element: &apos;com.CalculateSlab1Tax&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;calculateSlab1Tax&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com{calculateSlab1Tax.java[calculateSlab1Tax" matchStrategy="1" name="CalculateSlab1Tax" qualified="false" references="true" similarDeclarations="false" stamp="1703154059156" textual="false" version="1.0"/>
+</session>

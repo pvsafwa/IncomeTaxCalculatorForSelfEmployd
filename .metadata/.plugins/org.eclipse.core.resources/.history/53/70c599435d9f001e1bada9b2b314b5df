@@ -1,0 +1,31 @@
+package com;
+import java.util.Scanner;
+
+public class TaxCalC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inputKey = new Scanner(System.in);
+		System.out.println("Please Enter your name");
+		String name = inputKey.next();
+		System.out.println("Hello " +name+"!");
+		
+		int annualSalary = 0;
+		
+		annualSalary = inputKey.nextInt();
+		int surCharge=0;
+		if (annualSalary >= 5000000)
+			surCharge = 10/100;
+		else if (annualSalary >= 10000000)
+		{
+			surCharge = 15/100;
+		}
+		System.out.println("Please Enter your name");
+		
+		
+		
+		
+		
+	}
+
+}

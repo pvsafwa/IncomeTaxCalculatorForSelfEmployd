@@ -1,0 +1,45 @@
+package com;
+import java.util.Scanner;
+
+public class TaxCalC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inputKey = new Scanner(System.in);
+		System.out.println("Please Enter your name");
+		String name = inputKey.next();
+		System.out.println("Hello " +name+"!");
+		System.out.println("Please Enter your annual salary");
+		public static float annualSalary;
+		Scanner inputSalary = new Scanner(System.in);
+		annualSalary = inputSalary.nextFloat();
+				
+		if (annualSalary > 300000 && annualSalary < 600000)
+		{
+			
+			
+		}
+		else if (annualSalary > 300000 && annualSalary < 900000)
+		{
+			
+		}
+		
+		else if (annualSalary > 300000 && annualSalary < 1200000)
+		{
+			
+		}
+		
+		else if (annualSalary > 300000 && annualSalary < 1500000)
+		{
+			
+		}
+		
+		else 
+		else
+			System.out.println("You dont have to pay any taxes");
+		
+		
+		
+	}
+
+}

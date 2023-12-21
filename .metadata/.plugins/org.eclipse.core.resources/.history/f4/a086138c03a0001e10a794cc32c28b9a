@@ -1,0 +1,47 @@
+package com;
+import java.util.Scanner;
+
+public class TaxCalC {
+	public static float annualSalary;
+
+	public static void main(String[] args) {
+				
+		Scanner inputKey = new Scanner(System.in);
+		System.out.println("Please Enter your name");
+		String name = inputKey.next();
+		System.out.println("Hello " +name+"!");
+		System.out.println("Please Enter your annual salary");
+		Scanner inputSalary = new Scanner(System.in);
+		annualSalary = inputSalary.nextFloat();
+			
+		if (annualSalary > 300000 && annualSalary < 600000) {
+			CalculateSlab1Tax slab1Tax = new CalculateSlab1Tax();
+			slab1Tax.calculateSlab1Tax(annualSalary);
+		}
+		
+		else if(annualSalary > 300000 && annualSalary < 900000) {
+			CalculateSlab2Tax slab2Tax = new CalculateSlab2Tax();
+			slab2Tax.calculateSlab2Tax(annualSalary);		
+		}
+		
+		else if(annualSalary > 300000 && annualSalary < 1200000) {
+			CalculateSlab3Tax slab3Tax = new CalculateSlab3Tax();
+			slab3Tax.calculateSlab3Tax(annualSalary);
+		}
+		
+		else if(annualSalary > 300000 && annualSalary < 1500000) {
+			CalculateSlab4Tax slab4Tax = new CalculateSlab4Tax();
+			slab4Tax.calculateSlab4Tax(annualSalary);
+		}
+		
+		else if(annualSalary > 1500000) {
+			CalculateSlab5Tax slab5Tax = new CalculateSlab5Tax();
+			slab5Tax.calculateSlab5Tax(annualSalary);	
+			
+		}
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package com;
+import java.util.Scanner;
+
+public class TaxCalC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int annualSalary;
+		int Surcharge;
+		Scanner inputSalary = new Scanner(System.in);
+		annualSalary = inputSalary.nextInt();
+		
+	}
+
+}
